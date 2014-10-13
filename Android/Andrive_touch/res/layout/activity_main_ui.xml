@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.14"
+        android:orientation="vertical" >
+
+        <com.andrive.ui.OverlayedPreviewView
+            android:id="@+id/main_overrayed_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="95" >
+        </com.andrive.ui.OverlayedPreviewView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/steering_left_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:text="Left" />
+
+            <Button
+                android:id="@+id/steering_right_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:text="Right" />
+
+            <ToggleButton
+                android:id="@+id/PM_botton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10"
+                android:checked="true"
+                android:textOff="P/M"
+                android:textOn="P/M" >
+            </ToggleButton>
+
+            <com.andrive.ui.PitchHandle
+                android:id="@+id/main_pitch_ring"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+            </com.andrive.ui.PitchHandle>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/speed_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.86"
+        android:text="Acc/Brake" />
+
+</LinearLayout>
